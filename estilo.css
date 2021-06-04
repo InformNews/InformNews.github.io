@@ -1,0 +1,30 @@
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu-horizontal ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: cornflowerblue;
+    width: 100;
+}
+#menu-horizontal ul li{
+    display: inline;
+}
+
+#menu-horizontal ul li a{
+    color:rgb(25, 79, 195);
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .2s;
+    
+}
+
+#menu-horizontal ul li a:hover{
+    background-color: rgb(137, 172, 211);
+
+}
