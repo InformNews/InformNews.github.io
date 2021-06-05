@@ -1,0 +1,131 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: sans-serif;
+    color: 	#4169E1;
+    margin-left: 15%;
+    margin-top: 3em;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: 	#4169E1;
+    margin-left: 10%;
+    margin-top: 2em;
+} 
+
+#check{
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+}
+
+/* Elemento de tag <body> */
+body{
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: 	#4169E1;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: 	#4169E1;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: 	#4169E1;
+    display: block;
+    
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"] .campo input[type="email"] .campo input[type="email"] {
+    padding: 0.2em;
+    border: 1px solid 	#4169E1;
+    box-shadow: 2px 2px 2px #4169E1;
+    display: block;
+    float: left;
+}
+
+
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #F0F8FF;
+    box-shadow: 2px 2px 2px #4169E1;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background:#73b6ecf3 ;
+    border: 0;
+    margin-bottom: 50em;
+    color: 	#0000CD;
+    padding: 10px 10px;
+    box-shadow: 2px 2px 2px #0000CD;
+    text-shadow: 1px 1px 1px #0000CD;
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: 	#4169E1;
+    
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background:   #96c4ec;
+    box-shadow: inset 2px 2px 2px #4169E1;
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
